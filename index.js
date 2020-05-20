@@ -33,3 +33,19 @@ jQuery(document).ready(function($) {
     }, 30);
 
 });
+
+// var video = document.getElementById("myVideo");
+// var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  var mediaPlayer = document.getElementById('myVideo');
+  if (mediaPlayer.paused) {
+      mediaPlayer.play(); 
+      $('.pause-btn').show();
+      $('.play-btn').hide();
+  } else {
+      mediaPlayer.pause(); 
+      $('.play-btn').show();
+      $('.pause-btn').hide();
+  }
+}
