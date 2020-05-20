@@ -15,7 +15,7 @@ body, html {
 }
 h1, p, a {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif; 
-	color:#fff; 
+	color:black; 
 	margin: 0;
 }
 h1 {
@@ -35,14 +35,14 @@ p {
 	left : 0;
 }
 .blend-multiply {
-	mix-blend-mode : difference;
+	mix-blend-mode : multiply;
 }
 .blend-screen {
-    mix-blend-mode : screen;
+	mix-blend-mode : screen;
 }
 
 .mask-bg-color {
-	background-color: white;
+	background-color: grey;
 }
 .animated-bg {
 	/* background-image: url('assets/cart.mp4'); 
@@ -55,25 +55,27 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    isolation: isolate;
-    mix-blend-mode: none;
 }
 .video {
     /* display: flex;
     /* /* justify-self: center;
     align-self: center;
     margin: 0 auto; */
-    isolation: isolate;
-    
 }
 .element-mask {
-	background-color: #fff;
+	background-color: white;
 }
 
+.playbutton{
+    color:#50c7f8;
+    background: none;
+    border: #50c7f8;
+    font-size: 2rem;
+}
 .circle-follow {
 	position :absolute;
 	overflow : hidden;
-	background-color: #000000;
+	background-color: red;
 	width :320px; 
 	height: 320px;
     top:calc( 50% - 160px); 
@@ -88,6 +90,14 @@ p {
 .circle-follow.moving {
 	opacity : 1;
 }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 
 
 /* hack to detect ie11 and above - blend mode not supported */
