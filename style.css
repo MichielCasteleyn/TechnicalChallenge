@@ -35,22 +35,36 @@ p {
 	left : 0;
 }
 .blend-multiply {
-	mix-blend-mode : multiply;
+	mix-blend-mode : difference;
 }
 .blend-screen {
-	mix-blend-mode : screen;
+    mix-blend-mode : screen;
 }
 
 .mask-bg-color {
-	background-color: #50c7f8;
+	background-color: white;
 }
 .animated-bg {
-	background-image: url('assets/cart.mp4'); 
+	/* background-image: url('assets/cart.mp4'); 
 	background-position:center;  
-	-moz-background-size:cover;
+	/* -moz-background-size:cover;
 	-o-background-size:cover;
-	-webkit-background-size:cover;
-	background-size:cover;
+	-webkit-background-size:cover; */
+    /* background-size:;
+    background-repeat: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    isolation: isolate;
+    mix-blend-mode: none;
+}
+.video {
+    /* display: flex;
+    /* /* justify-self: center;
+    align-self: center;
+    margin: 0 auto; */
+    isolation: isolate;
+    
 }
 .element-mask {
 	background-color: #fff;

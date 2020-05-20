@@ -4,41 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Challenge</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-    <link rel="stylesheet" href="./style.css">
-    <!-- <script type="text/javascript" src="bright.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    
+
 </head>
 <body>
-    <!-- <div>
-        <img src="assets/364.jpg" alt="cat">
-    </div> -->
+   <!-- This demo is inspired by the awesome nurturedigital website created by Bryan James. You can view it at http://nurturedigital.com -->
 
-    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <lottie-player src="https://assets6.lottiefiles.com/datafiles/8l7ETEaYxbLz8hU/data.json" mode="bounce" background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover></lottie-player>
-    <lottie-player src="https://assets8.lottiefiles.com/temp/lf20_dgJrlZ.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player> -->
-    <div class="wrapper full-size">
-        <!-- This div handle the background color -->
-        <div class="mask-bg-color full-size">
-        </div>
-        <!-- This div  wrap all other elements with blend-mode multiply apply -->
-        <div class="blend-multiply full-size">	
-            <!-- This div handle the background element (could be an image, a video or in that case a gif) -->
-            <div class="animated-bg full-size">
-            </div>
-            <!-- This div wrap the masked element with blend-mode screen apply and background-color set as #ffffff = white background -->
-            <div class="blend-screen element-mask full-size">
-                <!-- This span display the masked element-->
-                <span id="circle" class="circle-follow">
-                </span>
-            </div>
-        </div>
-    </div>
-    
-    <div class="notice">
-        <h1>Move your mouse !</h1>
-        <p>This is an attempt to recreate the effect of the homepage of <a href="http://nurturedigital.com/">nurturedigital</a></p>
-    </div>
+<div class="wrapper full-size">
+	<!-- This div handle the background color -->
+	<div class="mask-bg-color full-size">
+	</div>
+	<!-- This div  wrap all other elements with blend-mode multiply apply -->
+	<div class="blend-multiply full-size">	
+		<!-- This div handle the background element (could be an image, a video or in that case a gif) -->
+		<div class="animated-bg full-size">
+            <video autoplay controls muted loop id="myVideo" class="video">
+                <source src="assets/cart.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div> 
+
+        <!-- This div wrap the masked element with blend-mode screen apply and background-color set as #ffffff = white background -->
+		<div class="blend-screen element-mask full-size">
+			<!-- This span display the masked element-->
+			<span id="circle" class="circle-follow">
+			</span>
+		</div>
+	</div>
+</div>
+
+<div class="notice">
+	<h1>Move your mouse and discover the monster!</h1>
+</div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="index.js"></script>
 </html>
